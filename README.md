@@ -1,2 +1,10 @@
-# typet-javascript-workshop
-Typet JavaScript Workshop
+# Typet JavaScript Workshop
+
+## Oppgaver
+
+Kjøre oppgaver:
+
+```
+$ yarn install
+$ yarn type-check
+```
