@@ -1,15 +1,23 @@
 {
-  "name": "tests",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "type-check": "tsc --watch  --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "ts-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^23.3.4",
+    "@types/node": "^10.11.5",
+    "@types/react": "^16.4.16",
+    "@types/react-dom": "^16.0.9",
+    "react-scripts-ts": "3.1.0",
+    "typescript": "^3.1.1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "typescript": "^3.0.1"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
   }
 }
