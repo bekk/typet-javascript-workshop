@@ -32,7 +32,12 @@ Hvordan TypeScript ofte kan bestemme typer på ting uten at du trenger å være 
 Mer avanserte datatyper. Som f.eks. union-types og intersection-types.
 
 Det er greit å vite at TypeScript fint kjører side om side sammen med Javascript. I praksis betyr bare dette at TypeScript 
-ikke kan gi deg så mye hjelp med å kjøre statisk analyse opp i mot javascript koden. 
+ikke kan gi deg så mye hjelp med å kjøre statisk analyse opp i mot javascript koden.
+
+**Tema vi burde få inn:**
+**Modellere objekter man får fra API'er, gir typesikkerhet under refaktoreringer etc.**
+**Typeguards for å modellere feilstate etc. (f.eks etter fetching av data)**
+**Nyttige småting som readonly etc.**
 
 ### Oppgave 1
 
@@ -86,10 +91,35 @@ a) Få det til å bygge
 
 b) Bruk komponenten i App.tsx og få til å kjøre
 
-c) Få det til å kompilere uten å bruke (x: any)
-
+c) Få det til å kompilere uten å bruke (x: any) **her burde vi skrive litt om/linke til typene til events i react.**
 
 ### Oppgave 2
+Default verdier og partial types.
+
+I JSX verden kan man blant annet definere default verdier for proptypes til en komponent slik:
+```
+class NameForm extends React.Component {
+...
+}
+
+NameForm.propTypes = {
+    label: PropTypes.string
+    type: PropTypes.string
+};
+
+NameForm.defaultProps = {
+    label: "defaultLabel"
+}
+```
+Partial types lar oss definere typer som er subsett av deler av andre typer ved å si at alle properties av type T er optional. Definisjonen ser slik ut: 
+```
+type Partial<T> = { [P in keyof T]?: T[P]; };
+```
+
+a) Utnytt partial types for å sette en default verdi på label i typescript komponenten din.
+(Man kan sette `public static defaultProps = {}` inne i komponenten.)
+
+### Oppgave 3
 
 Legg til Redux
 
