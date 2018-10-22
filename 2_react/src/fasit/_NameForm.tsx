@@ -38,7 +38,7 @@ class NameForm extends React.Component<IProps, IState> {
             div = (
                 <div>{"Hello " + this.props.name}</div>
             )
-        };
+        }
         return (
             <form onSubmit={this.handleSubmit}>
                 {div}

@@ -6,6 +6,7 @@ export interface SubmitName {
     type: TypeKeys.SUBMIT_NAME;
     name: string;
 }
+
 export type ActionTypes =
     | SubmitName
 

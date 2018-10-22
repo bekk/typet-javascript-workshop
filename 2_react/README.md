@@ -78,15 +78,9 @@ type Partial<T> = { [P in keyof T]?: T[P]; };
 a) Utnytt partial types for å sette en default verdi på label i typescript komponenten din.
 (Man kan sette `public static defaultProps = {}` inne i komponenten.)
 
-### Oppgave 3
+### Oppgave 3 Redux
 
-Legg til Redux
-
-```
-npm install redux react-redux redux-thunk --save
-```
-
-Opprett actions/_index.ts og paste inn:
+Opprett store/index.ts og paste inn:
 
 ```
 export const SUBMIT_NAME = 'SUBMIT_NAME';
@@ -97,7 +91,8 @@ export const submitName = name => ({
 });
 ```
 
-Opprett reducers/_index.ts og paste inn:
+Opprett store/index.ts og paste inn:
+
  ```
  import {SUBMIT_NAME} from "../actions";
  
@@ -118,20 +113,23 @@ Opprett reducers/_index.ts og paste inn:
  }
  ```
  
-Opprette store.ts og paste inn:
-
-```
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import rootReducer from './reducers/index';
-
-export default function configureStore() {
-    return createStore(
-        rootReducer,
-        applyMiddleware(thunk)
-    );
-}
-``` 
- a) Få alt til å kompilere
+ #### Action
+ a) Lag enum av SUBMIT_NAME
  
- b) Bruk submitName i NameForm handleSubmit()
+ b) Lag interface for submitName
+ 
+ c) Lag en type av Action
+ 
+ ### Reducer
+ 
+ a) Lag interface for State 
+ 
+ b) Sett på typer på reducers
+ 
+ ### NameForm.tsx
+ 
+ a) Bruk submitForm handleSubmit() 
+    - Connect til redux store og oppdater interface for NameForm 
+    
+ b) Få alt til å kompilere
+ 

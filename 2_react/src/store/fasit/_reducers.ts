@@ -8,7 +8,7 @@ export interface State {
     readonly name: string,
 }
 
-export default (state: State = initialState, action: ActionTypes) => {
+export default (state: State = initialState, action: ActionTypes): State => {
     switch(action.type) {
         case TypeKeys.SUBMIT_NAME:
             return {
