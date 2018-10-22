@@ -6,7 +6,7 @@ export function hello(name: string): string {
   return `Hello ${name}`;
 }
 
-export function returnNothing() {
+export function returnNothing(): void {
     console.log("Sometimes we don't return anything!")
 }
 

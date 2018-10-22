@@ -16,9 +16,13 @@ export function switchOnEnums(colors){
         case Color.BLUE: {
         }
         default:
-            throw new UnreachableCaseError(colors);
+            neverHappens(colors);
 
     }
+}
+
+export function neverHappens(neverEver: never): never {
+
 }
 
 class UnreachableCaseError extends Error {

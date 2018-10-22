@@ -1,4 +1,4 @@
-enum Color{YELLOW, GREEN, BLUE, RED}
+enum Color{YELLOW, GREEN, BLUE}
 
 export function colorsAreCool() {
     console.log(switchOnEnums(Color.YELLOW))
