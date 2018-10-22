@@ -1,0 +1,16 @@
+{
+  "name": "minimal-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ex1": "tsc ex1/index.ts",
+    "ex1:fasit": "tsc ex1_fasit/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.1.3"
+  }
+}
