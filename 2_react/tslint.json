@@ -1,7 +1,11 @@
 {
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
-    "member-access": false
+    "member-access": false,
+    "ordered-imports": false,
+    "named-imports-order": "any",
+    "interface-name": false,
+    "object-literal-sort-keys": false
   },
   "linterOptions": {
     "exclude": [
