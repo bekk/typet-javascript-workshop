@@ -58,7 +58,7 @@ export default NameForm;
 
 ```
 
-Nyttig dokumentasjon for [oppgave](https://www.typescriptlang.org/docs/handbook/react-&-webpack.html#Write%20some%20code) 
+Dokumentasjon som kan være nyttig for [oppgave](https://www.typescriptlang.org/docs/handbook/react-&-webpack.html#write-some-code) 
 
 a) Få det til å bygge uten kompileringsfeil
 
