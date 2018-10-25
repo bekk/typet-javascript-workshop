@@ -2,7 +2,7 @@
 
 Vi har satt opp create-react-app med typescript for dere.
 
-Kjøre `npm install` og start appen ved å kjøre `npm run start`.
+Kjøre `npm install` og start appen ved å kjøre `npm start`.
 
 Man kan også bygge applikasjonen ved å kjøre `npm run build`
 
