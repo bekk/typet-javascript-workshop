@@ -3,15 +3,6 @@
 Vi anbefaler at du bruker en ide som støtter typescript, som f.eks. Intellij eller Visual Studio Code
 #### Intro
 
-Vi har satt opp create-react-app med typescript for 
-dere.
-
-Start med å klone dette repoet, kjøre `npm install` og start appen ved å kjøre `npm run start`.
-
-Man kan også bygge applikasjonen ved å kjøre `npm run build`
-
-Dokumentasjon på create-react-app med typescript finner dere [her](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter)
-
 Følgende sider kan være en god start:
 
 * [basic types](https://www.typescriptlang.org/docs/handbook/basic-types.html)

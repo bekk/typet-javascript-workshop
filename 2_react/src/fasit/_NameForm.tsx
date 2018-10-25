@@ -1,13 +1,14 @@
 import * as React from 'react';
 import {connect} from "react-redux";
 import {bindActionCreators, Dispatch} from "redux";
-import {ActionTypes, submitName} from "../store/fasit/_actions";
-import {State} from "../store/fasit/_reducers";
+import {ActionTypes, registerName} from "../store/fasit/_actions";
+import {Names, Store} from "../store/fasit/_reducers";
+import NamesList from './_NamesList';
 
 interface IProps {
     label: string,
-    name?: string,
-    submitName: typeof submitName
+    names: Names
+    registerName: typeof registerName
 }
 
 interface IState {
@@ -28,36 +29,31 @@ class NameForm extends React.Component<IProps, IState> {
     };
 
     handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        this.props.submitName(this.state.value);
+        console.error(this.props.names.length);
+        this.props.registerName(this.props.names.length, this.state.value);
         event.preventDefault();
     };
 
     render() {
-        let div;
-        if (this.props.name) {
-            div = (
-                <div>{"Hello " + this.props.name}</div>
-            )
-        }
         return (
-            <form onSubmit={this.handleSubmit}>
-                {div}
-                <label>
-                    {this.props.label}
-                    <input type="text" value={this.state.value} onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
+            <div>
+                <form className="register-person" onSubmit={this.handleSubmit}>
+                    <label htmlFor="name">{this.props.label}</label>
+                    <input id="name" type="text" value={this.state.value} onChange={this.handleChange}/>
+                    <input type="submit" value="Submit"/>
+                </form>
+                <NamesList />
+            </div>
         );
     }
 }
 
-const mapStateToProps = (state: State) => ({
-    name: state.name,
+const mapStateToProps = (state: Store) => ({
+    names: state.names,
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<ActionTypes>) => bindActionCreators({
-    submitName
+    registerName
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(NameForm);

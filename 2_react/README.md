@@ -1,6 +1,19 @@
+### Typescript React/Redux 
+
+Vi har satt opp create-react-app med typescript for dere.
+
+Kjøre `npm install` og start appen ved å kjøre `npm run start`.
+
+Man kan også bygge applikasjonen ved å kjøre `npm run build`
+
+Dokumentasjon på create-react-app med typescript finner dere [her](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter)
+
+
 ### Oppgave 1
 
-Opprett NameForm.tsx og paste inn følgende kode:
+I denne oppgaven skal vi type en helt vanlig react komponent.
+
+Opprett NameForm.tsx og paste inn koden:
 
 ```jsx harmony
 import React from 'react';
@@ -45,48 +58,31 @@ export default NameForm;
 
 ```
 
+Nyttig dokumentasjon for [oppgave](https://www.typescriptlang.org/docs/handbook/react-&-webpack.html#Write%20some%20code) 
 
-a) Få det til å bygge
+a) Få det til å bygge uten kompileringsfeil
+
+Tips: Hvis du sliter med å finne typen er det helt greit å bruke (x: any) 
 
 b) Bruk komponenten i App.tsx og få til å kjøre
 
-c) Få det til å kompilere uten å bruke (x: any) **her burde vi skrive litt om/linke til typene til events i react.**
+c) Få det til å kompilere uten å bruke (x: any)
 
-### Oppgave 2
-Default verdier og partial types.
+Tips: Typen til eventen i handleSubmit er: React.FormEvent<HTMLFormElement> og typen til handleChange er React.FormEvent<HTMLInputElement>
 
-I JSX verden kan man blant annet definere default verdier for proptypes til en komponent slik:
-```
-class NameForm extends React.Component {
-...
-}
+For mer dokumentasjon se [typescript jsx dokumentasjon](https://www.typescriptlang.org/docs/handbook/jsx.html)
 
-NameForm.propTypes = {
-    label: PropTypes.string
-    type: PropTypes.string
-};
+### Oppgave 2 Redux
 
-NameForm.defaultProps = {
-    label: "defaultLabel"
-}
-```
-Partial types lar oss definere typer som er subsett av deler av andre typer ved å si at alle properties av type T er optional. Definisjonen ser slik ut: 
-```
-type Partial<T> = { [P in keyof T]?: T[P]; };
-```
-
-a) Utnytt partial types for å sette en default verdi på label i typescript komponenten din.
-(Man kan sette `public static defaultProps = {}` inne i komponenten.)
-
-### Oppgave 3 Redux
+I denne oppgaven setter vi fokus på Redux og hvordan vi kan utnytte Typescript
 
 Opprett store/index.ts og paste inn:
 
 ```
-export const SUBMIT_NAME = 'SUBMIT_NAME';
+export const REGISTER_NAME = 'REGISTER_NAME';
 
-export const submitName = name => ({
-    type: SUBMIT_NAME,
+export const registerName = name => ({
+    type: REGISTER_NAME,
     name
 });
 ```
@@ -94,7 +90,7 @@ export const submitName = name => ({
 Opprett store/index.ts og paste inn:
 
  ```
- import {SUBMIT_NAME} from "../actions";
+ import {REGISTER_NAME} from "../actions";
  
  const initialState = {
    name: ''
@@ -102,7 +98,7 @@ Opprett store/index.ts og paste inn:
  
  export default (state = initialState, action) => {
      switch(action.type) {
-         case SUBMIT_NAME:
+         case REGISTER_NAME:
              return {
                  ...state,
                  name: action.name
@@ -114,22 +110,48 @@ Opprett store/index.ts og paste inn:
  ```
  
  #### Action
- a) Lag enum av SUBMIT_NAME
+ a) Lag enum av REGISTER_NAME
  
- b) Lag interface for submitName
+ Eksempel:
  
- c) Lag en type av Action
+ ```tsx
+ export enum Type {
+     ACTION_TYPE = "ACTION_TYPE",
+ }
+ ```
  
- ### Reducer
+ b) Implementer interface for registerName
  
- a) Lag interface for State 
+ Eksempel:
  
- b) Sett på typer på reducers
+ ```tsx
+ export interface Action {
+     type: TypeKeys.ACTION_TYPE;
+ }
+ ```
  
- ### NameForm.tsx
+ #### Reducer
  
- a) Bruk submitForm handleSubmit() 
-    - Connect til redux store og oppdater interface for NameForm 
-    
- b) Få alt til å kompilere
+ a)  Opprett en union type over alle lovlige actions i actions.ts.
+  
+  Eksempel:
+  
+  ```tsx
+  export type ActionTypes = Action1 | Action2
+ 
+  ```
+ b) Lag interface for State 
+ 
+ c) Sett på typer i reduceren og få alt til å kompilere
+ 
+ d) Bruk registerName i handleSubmit() i NamesForm.tsx
+ 
+ e) Connect til redux store og oppdater interface for NameForm.tsx
+ 
+ Test dette ved å for eksempel skrive ut navnet som ligger i storen.
+ 
+ ### Oppgave 3 (Valgfritt)
+ a) Utvid applikasjonen til å registerer navn i en liste som rendres ut
+ 
+ b) Legg på funksjonalitet for å fjerne navn fra listen.
  

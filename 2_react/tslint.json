@@ -5,7 +5,9 @@
     "ordered-imports": false,
     "named-imports-order": "any",
     "interface-name": false,
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "jsx-no-lambda": false,
+    "no-console": false
   },
   "linterOptions": {
     "exclude": [
