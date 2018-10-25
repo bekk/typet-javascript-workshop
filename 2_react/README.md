@@ -68,7 +68,7 @@ b) Bruk komponenten i App.tsx og få til å kjøre
 
 c) Få det til å kompilere uten å bruke (x: any)
 
-Tips: Typen til eventen i handleSubmit er: React.FormEvent<HTMLFormElement> og typen til handleChange er React.FormEvent<HTMLInputElement>
+Tips: Typen til eventen i handleSubmit er: `React.FormEvent<HTMLFormElement>` og typen til handleChange er `React.FormEvent<HTMLInputElement>`
 
 For mer dokumentasjon se [typescript jsx dokumentasjon](https://www.typescriptlang.org/docs/handbook/jsx.html)
 
