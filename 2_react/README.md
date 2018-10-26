@@ -125,14 +125,14 @@ Opprett store/index.ts og paste inn:
  Eksempel:
  
  ```tsx
- export interface Action {
-     type: TypeKeys.ACTION_TYPE;
+ export interface MyAction {
+     type: Type.ACTION_TYPE;
  }
  ```
  
  #### Reducer
  
- a)  Opprett en union type over alle lovlige actions i actions.ts.
+ a)  Opprett en [union type](https://www.typescriptlang.org/docs/handbook/advanced-types.html#union-types) over alle lovlige actions i actions.ts.
   
   Eksempel:
   
@@ -144,13 +144,13 @@ Opprett store/index.ts og paste inn:
  
  c) Sett på typer i reduceren og få alt til å kompilere
  
- d) Bruk registerName i handleSubmit() i NamesForm.tsx
+ d) Connect til redux store og oppdater interface for NameForm.tsx
  
- e) Connect til redux store og oppdater interface for NameForm.tsx
+ e) Bruk registerName i handleSubmit() i NamesForm.tsx
  
  Test dette ved å for eksempel skrive ut navnet som ligger i storen.
  
- ### Oppgave 3 (Valgfritt)
+ ### Oppgave 3
  a) Utvid applikasjonen til å registerer navn i en liste som rendres ut
  
  b) Legg på funksjonalitet for å fjerne navn fra listen.
