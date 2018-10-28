@@ -9,7 +9,7 @@ Man kan også bygge applikasjonen ved å kjøre `npm run build`
 Dokumentasjon på create-react-app med typescript finner dere [her](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter)
 
 
-### Oppgave 1
+### Oppgave 1 TSX
 
 I denne oppgaven skal vi type en helt vanlig react komponent.
 
@@ -74,7 +74,7 @@ For mer dokumentasjon se [typescript jsx dokumentasjon](https://www.typescriptla
 
 ### Oppgave 2 Redux
 
-I denne oppgaven setter vi fokus på Redux og hvordan vi kan utnytte Typescript
+I denne oppgaven ser vi på Redux og hvordan vi kan utnytte Typescript
 
 Opprett store/index.ts og paste inn:
 
