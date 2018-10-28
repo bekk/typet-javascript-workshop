@@ -3,11 +3,11 @@
   "rules": {
     "member-access": false,
     "ordered-imports": false,
-    "named-imports-order": "any",
     "interface-name": false,
     "object-literal-sort-keys": false,
     "jsx-no-lambda": false,
-    "no-console": false
+    "no-console": false,
+    "jsx-self-close": false
   },
   "linterOptions": {
     "exclude": [
