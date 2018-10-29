@@ -9,9 +9,9 @@
     "3": "tsc 3_interfaces/index.ts",
     "4": "tsc 4_advanced_types/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "1_fasit": "tsc 1_basics_fasit/index.ts",
+    "1:fasit": "tsc 1_basics_fasit/index.ts",
     "2:fasit": "tsc 2_enum_fasit/index.ts",
-    "3:fasit": "tsc 3_interfaces_fasitindex.ts",
+    "3:fasit": "tsc 3_interfaces_fasit/index.ts",
     "4:fasit": "tsc 4_advanced_types_fasit/index.ts"
   },
   "author": "",
