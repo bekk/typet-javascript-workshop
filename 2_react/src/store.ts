@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+// TODO: Endre url til din reducer for oppgave 2
 import rootReducer from './store/fasit/_reducers';
-// import rootReducer from './reducers/index';
 
 export default function configureStore() {
     return createStore(
