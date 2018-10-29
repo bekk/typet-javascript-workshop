@@ -152,7 +152,7 @@ Opprett store/index.ts og paste inn:
  Test dette ved å for eksempel skrive ut navnet som ligger i storen.
  
  ### Oppgave 3
- a) Utvid applikasjonen til å registerer navn i en liste som rendres ut
+ a) Utvid applikasjonen til å registrere navn i en liste som rendres ut
  
  b) Legg på funksjonalitet for å fjerne navn fra listen.
  
