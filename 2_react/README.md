@@ -8,7 +8,7 @@ Man kan også bygge applikasjonen ved å kjøre `npm run build`
 
 Dokumentasjon på create-react-app med typescript finner dere [her](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter)
 
-Hvis [react](https://reactjs.org/docs/hello-world.html) og [redux](https://redux.js.org/) er nytt for deg
+Hvis react og redux er nytt for deg se dokumentasjon for [react](https://reactjs.org/docs/hello-world.html) og [redux](https://redux.js.org/)
 
 ### Oppgave 1 TSX
 
