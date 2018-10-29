@@ -1,0 +1,1 @@
+import { Result } from './result';
