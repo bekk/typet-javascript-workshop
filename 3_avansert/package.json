@@ -1,0 +1,21 @@
+{
+  "name": "3_avansert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "1": "tsc -p 1_hoc_enhancer/tsconfig.json",
+    "2": "tsc -p 2_hoc_injector/tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "typescript": "^3.1.3",
+    "utility-types": "^2.1.0"
+  }
+}
