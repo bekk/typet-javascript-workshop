@@ -2,7 +2,7 @@
 // Typeguards lar oss konkretisere typer som har muligheten til å være flere.
 // Noen ting vi vil trenge:
 // Type assertions: For å si at en type som kan være flere typer er en type kan man skrive:
-// (<T>variableName)..
+// (variableName as T)..
 // Et litt konstruert eksempel vi kan jobbe videre med ser slik ut.
 interface Car {
     driveOnFourWheels();
@@ -48,11 +48,11 @@ vehicle.brake();
 vehicle.driveOnTwoWheels();
 
 // La oss konkretisere typene med type assertions! Bruk dette til å fikse koden over.
-if ((<Car>vehicle).driveOnFourWheels) {
-    (<Car>vehicle).driveOnFourWheels();
+if ((vehicle as Car).driveOnFourWheels) {
+    (vehicle as Car).driveOnFourWheels();
 }
-else if ((<Motorcycle>vehicle).driveOnTwoWheels) {
-    (<Motorcycle>vehicle).driveOnTwoWheels();
+else if ((vehicle as Motorcycle).driveOnTwoWheels) {
+    (vehicle as Motorcycle).driveOnTwoWheels();
 }
 
 // Fulfør koden under:
