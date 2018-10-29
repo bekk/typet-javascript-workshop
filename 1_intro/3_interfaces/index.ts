@@ -6,7 +6,7 @@ export function interfaceByShape(typeWithShape): void {
 interface LabelledValue{
 }
 
-export function printLabel(labelledObject): void{
+export function printLabel(labelledObject: LabelledValue): void{
     console.log(labelledObject.label)
 }
 
