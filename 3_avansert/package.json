@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "1": "tsc -p 1_hoc_enhancer/tsconfig.json",
-    "2": "tsc -p 2_hoc_injector/tsconfig.json"
+    "2": "tsc -p 2_hoc_injector/tsconfig.json",
+    "3": "tsc 3_result/index.ts && node 3_result/index.js",
+    "4": "tsc 4_mapped_types/index.ts && node 4_mapped_types/index.js"
   },
   "author": "",
   "license": "ISC",

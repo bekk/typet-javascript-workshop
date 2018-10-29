@@ -17,10 +17,11 @@ function moodyAdd(a: number, b: number): Result<number, string> {
 
 const hopefullyFour = moodyAdd(3, 1);
 
-if (hopefullyFour.isOk()) {
-  console.log("We added successfully! It was ", hopefullyFour.value);
-} else {
-  console.log("Oh, no! It failed: ", hopefullyFour.error);
-}
+// Oppgave 1: Håndter og skriv ut resultatet eller feilverdien i hopefullyFour,
+// avhengig av hva som skjedde:
 
-// Oppgave 1:
+if (hopefullyFour.isOk()) {
+  console.log("We added successfully! Result was", hopefullyFour.value);
+} else {
+  console.log("Oh, no! It failed. Error value was", hopefullyFour.error);
+}
