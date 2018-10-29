@@ -25,11 +25,6 @@ Mer avanserte datatyper. Som f.eks. union-types og intersection-types.
 Det er greit å vite at TypeScript fint kjører side om side sammen med Javascript. I praksis betyr bare dette at TypeScript 
 ikke kan gi deg så mye hjelp med å kjøre statisk analyse opp i mot javascript koden.
 
-**Tema vi burde få inn:**
-**Modellere objekter man får fra API'er, gir typesikkerhet under refaktoreringer etc.**
-**Typeguards for å modellere feilstate etc. (f.eks etter fetching av data)**
-**Nyttige småting som readonly etc.**
-
 ### Oppgaver
 Oppgaven er delt inn i 3 deler.
 
