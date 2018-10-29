@@ -29,3 +29,12 @@ ikke kan gi deg så mye hjelp med å kjøre statisk analyse opp i mot javascript
 **Modellere objekter man får fra API'er, gir typesikkerhet under refaktoreringer etc.**
 **Typeguards for å modellere feilstate etc. (f.eks etter fetching av data)**
 **Nyttige småting som readonly etc.**
+
+### Oppgaver
+Oppgaven er delt inn i 3 deler.
+
+#### [1_intro](1_intro/readme.md)
+
+#### [2_react](2_react/readme.md)
+
+#### [3_avansert](3_avansert/readme.md)
