@@ -1,3 +1,4 @@
+// Oppgave 1. Assign en type til typeWithShape som gjør at vi vet hvilke verdier som er tilgjengelige.
 export function interfaceByShape(typeWithShape: {propertyOfType: string}): void {
     console.log(typeWithShape.propertyOfType)
 }
