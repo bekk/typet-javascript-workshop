@@ -8,7 +8,7 @@ Man kan også bygge applikasjonen ved å kjøre `npm run build`
 
 Dokumentasjon på create-react-app med typescript finner dere [her](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter)
 
-Hvis [react](https://reactjs.org/docs/hello-world.html) og [redux](https://redux.js.org/) er nytt for deg
+Hvis react og redux er nytt for deg se dokumentasjon for [react](https://reactjs.org/docs/hello-world.html) og [redux](https://redux.js.org/)
 
 ### Oppgave 1 TSX
 
@@ -61,13 +61,13 @@ export default NameForm;
 
 Dokumentasjon som kan være nyttig for [oppgaven](https://www.typescriptlang.org/docs/handbook/react-&-webpack.html#write-some-code) 
 
-a) Få det til å bygge uten kompileringsfeil
+a) Få koden til å bygge
 
 Tips: Hvis du sliter med å finne typen er det helt greit å bruke (x: any) 
 
 b) Bruk komponenten i App.tsx og få til å kjøre
 
-c) Få det til å kompilere uten å bruke (x: any)
+c) Få det til å kompilere/bygge uten å bruke (x: any)
 
 Tips: Typen til eventen i handleSubmit er: `React.FormEvent<HTMLFormElement>` og typen til handleChange er `React.FormEvent<HTMLInputElement>`
 
@@ -110,6 +110,8 @@ Opprett store/index.ts og paste inn:
  }
  ```
  
+ **Endre rootReducer til å peke på din reducer i store.ts**
+ 
  #### Action
  a) Lag enum av REGISTER_NAME
  
@@ -143,7 +145,7 @@ Opprett store/index.ts og paste inn:
   ```
  b) Lag interface for State 
  
- c) Sett på typer i reduceren og få alt til å kompilere
+ c) Sett på typer i reduceren og få alt til å kompilere/bygge
  
  d) Connect til redux store og oppdater interface for NameForm.tsx
  
