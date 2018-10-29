@@ -4,7 +4,8 @@ import {
 } from 'react';
 import * as React from 'react';
 
-// Required props
+// En høyereordens komponent (HOC) som krever en ekstra prop ved bruk av den
+// wrappede komponenten.
 
 interface BoxProps {
   label: string;

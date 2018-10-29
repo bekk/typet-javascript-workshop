@@ -7,7 +7,9 @@ import {
 import * as React from 'react';
 import { Subtract } from 'utility-types';
 
-// Injecting props
+// En høyereordens komponent (HOC) som gjør tilgjengelig ekstra props til bruk i
+// den wrappede komponenten. Det mest kjente eksempelet på en slik komponent er
+// nok `connect` fra react-redux.
 
 export interface InjectedTimerProps {
   secondsPassed: number;
