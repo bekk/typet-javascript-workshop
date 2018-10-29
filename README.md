@@ -33,3 +33,6 @@ Oppgavene er delt inn i 3 deler. Start med 1_intro.
 #### [2_react](https://github.com/bekk/typet-javascript-workshop/tree/master/2_react)
 
 #### [3_avansert](https://github.com/bekk/typet-javascript-workshop/tree/master/3_avansert)
+
+
+Presentasjonen kan dere finne [her](https://docs.google.com/presentation/d/1YlV5aLJdzhCkEGqd1fFy50mfy4rNoE9ZYRHrrUSEVSA/edit#slide=id.g43bf4aba58_0_213)
