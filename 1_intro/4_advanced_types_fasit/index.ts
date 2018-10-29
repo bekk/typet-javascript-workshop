@@ -45,19 +45,19 @@ let vehicle = getVehicle(2);
 // Begge potensielle typer kan bremse
 vehicle.brake();
 // Vi vet ikke hvilken type vi er og det er dermed usikkert om man kan kjøre på to hjul.
-(<Motorcycle>vehicle).driveOnTwoWheels();
+(vehicle as Motorcycle).driveOnTwoWheels();
 
 // La oss konkretisere typene med type assertions! Bruk dette til å fikse koden over.
-if ((<Car>vehicle).driveOnFourWheels) {
-    (<Car>vehicle).driveOnFourWheels();
+if ((vehicle as Car).driveOnFourWheels) {
+    (vehicle as Car).driveOnFourWheels();
 }
-else if ((<Motorcycle>vehicle).driveOnTwoWheels) {
-    (<Motorcycle>vehicle).driveOnTwoWheels();
+else if ((vehicle as Motorcycle).driveOnTwoWheels) {
+    (vehicle as Motorcycle).driveOnTwoWheels();
 }
 
 // Fulfør koden under:
 function isCar(vehicle: Car | Motorcycle): vehicle is Car {
-    return (<Car>vehicle).driveOnFourWheels !== undefined
+    return (vehicle as Car).driveOnFourWheels !== undefined
 }
 
 if(isCar(vehicle)) {
