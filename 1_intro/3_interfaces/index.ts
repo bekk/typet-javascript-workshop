@@ -41,6 +41,5 @@ interface SearchFunc {
     (source: string, target: string): boolean;
 }
 
-let mySearch: SearchFunc = (source: string, target: string): boolean => {
-    return source === target
+let mySearch: SearchFunc = () => {
 };
