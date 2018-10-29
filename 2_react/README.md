@@ -110,6 +110,8 @@ Opprett store/index.ts og paste inn:
  }
  ```
  
+ **Endre rootReducer til å peke på din reducer i store.ts**
+ 
  #### Action
  a) Lag enum av REGISTER_NAME
  
