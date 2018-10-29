@@ -21,12 +21,7 @@ export function switchOnEnums(colors){
     }
 }
 
-export function neverHappens(neverEver: never): never {
+export function neverHappens(neverEver: never): void{
 
 }
 
-class UnreachableCaseError extends Error {
-    constructor(val: never) {
-        super(`Unreachable case: ${val}`);
-    }
-}

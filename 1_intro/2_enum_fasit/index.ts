@@ -16,12 +16,11 @@ export function switchOnEnums(colors: Color) {
             return "Blått er rått"
         }
         default:
-            throw new UnreachableCaseError(colors);
+            neverHappens(colors);
+
     }
 }
 
-class UnreachableCaseError extends Error {
-    constructor(val: never) {
-        super(`Unreachable case: ${val}`);
-    }
+export function neverHappens(neverEver: never): void{
+
 }
