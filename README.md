@@ -26,7 +26,7 @@ Det er greit å vite at TypeScript fint kjører side om side sammen med Javascri
 ikke kan gi deg så mye hjelp med å kjøre statisk analyse opp i mot javascript koden.
 
 ### Oppgaver
-Oppgaven er delt inn i 3 deler.
+Oppgavene er delt inn i 3 deler. Start med 1_intro.
 
 #### [1_intro](https://github.com/bekk/typet-javascript-workshop/tree/master/1_intro)
 
