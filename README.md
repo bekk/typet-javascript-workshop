@@ -35,6 +35,6 @@ Oppgaven er delt inn i 3 deler.
 
 #### [1_intro](1_intro/readme.md)
 
-#### [2_react](2_react/readme.md)
+#### [2_react](https://github.com/bekk/typet-javascript-workshop/tree/master/2_react)
 
 #### [3_avansert](3_avansert/readme.md)
