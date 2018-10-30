@@ -1,6 +1,8 @@
 ## Typescript workshop
+
 #### IDE
-Vi anbefaler at du bruker en ide som støtter typescript, som f.eks. Intellij eller Visual Studio Code
+Vi anbefaler at du bruker en IDE som støtter TypeScript, som f.eks. IntelliJ IDEA (krever dessverre Ultimate) eller Visual Studio Code
+
 #### Intro
 
 Følgende sider kan være en god start:
@@ -9,10 +11,9 @@ Følgende sider kan være en god start:
 * [interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
 * [variable declaration](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
 
-En liten ting som er greit å være klar over er hvordan TypeScript bruker
+En liten ting som er greit å være klar over er hvordan TypeScript definerer
 [type compatability](https://www.typescriptlang.org/docs/handbook/type-compatibility.html).
-I motsetning til språk som f.eks. Java trenger ikke typer å være nøyaktig like, de trenger bare
-å ha samme funksjonalitet for å være kompatible med hverandre.
+I motsetning til språk som f.eks. Java er to typer kompatible hvis de er ekvivalente, de trenger ikke ha samme navn eller vite om hverandre. Har altså to typer de samme feltene, er de den samme typen.
 
 
 TypeScript har også en god del avansert funksjonalitet som kan være veldig til hjelp. Det er derfor
@@ -22,7 +23,7 @@ Hvordan TypeScript ofte kan bestemme typer på ting uten at du trenger å være 
 * [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html):
 Mer avanserte datatyper. Som f.eks. union-types og intersection-types.
 
-Det er greit å vite at TypeScript fint kjører side om side sammen med Javascript. I praksis betyr bare dette at TypeScript 
+Det er greit å vite at TypeScript fint kjører side om side sammen med Javascript. I praksis betyr bare dette at TypeScript
 ikke kan gi deg så mye hjelp med å kjøre statisk analyse opp i mot javascript koden.
 
 ### Oppgaver

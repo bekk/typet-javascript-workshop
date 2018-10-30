@@ -11,9 +11,12 @@ import { Subtract } from 'utility-types';
 // den wrappede komponenten. Det mest kjente eksempelet på en slik komponent er
 // nok `connect` fra react-redux.
 
+// For å implementere typen for denne komponenten bruker vi typen Subtract fra
+// et bibliotek med hjelpetyper: https://github.com/piotrwitek/utility-types
+
 export interface InjectedTimerProps {
   secondsPassed: number;
-  resetTimer(): void;
+  resetTimer: () => void;
 }
 
 interface TimerState {
@@ -48,3 +51,12 @@ const withTimer = <P extends InjectedTimerProps>(
       );
     }
   };
+
+// Hvis TimerDisplay er en komponent som brukes som
+// <TimerDisplay secondsPassed={1} resetTimer={() => console.log('Not implemented')}/>
+// vil
+// const TimerDisplayComplete = withTimer(TimerDisplay);
+// definere en ny komponent TimerDisplayComplete
+// som brukes som <TimerDisplayComplete />
+
+// Oppgave: Definer TimerDisplay og TimerDisplayComplete

@@ -8,6 +8,7 @@
     "1": "tsc -p 1_hoc_enhancer/tsconfig.json",
     "2": "tsc -p 2_hoc_injector/tsconfig.json",
     "3": "tsc 3_result/index.ts && node 3_result/index.js",
+    "3:fasit": "tsc 3_result_fasit/index.ts && node 3_result_fasit/index.js",
     "4": "tsc 4_mapped_types/index.ts && node 4_mapped_types/index.js"
   },
   "author": "",

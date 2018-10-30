@@ -19,3 +19,9 @@ const hopefullyFour = moodyAdd(3, 1);
 
 // Oppgave 1: Håndter og skriv ut resultatet eller feilverdien i hopefullyFour,
 // avhengig av hva som skjedde:
+
+if (hopefullyFour.isOk()) {
+  console.log("We added successfully! Result was", hopefullyFour.value);
+} else {
+  console.log("Oh, no! It failed. Error value was", hopefullyFour.error);
+}
