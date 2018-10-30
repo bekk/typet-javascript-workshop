@@ -7,8 +7,8 @@ export function colorsAreCool() {
     console.log(switchOnEnums())
 }
 
-export function switchOnEnums(colors){
-    switch (colors) {
+export function switchOnEnums(color){
+    switch (color) {
         case Color.YELLOW: {
         }
         case Color.GREEN: {
@@ -16,8 +16,7 @@ export function switchOnEnums(colors){
         case Color.BLUE: {
         }
         default:
-            neverHappens(colors);
-
+            neverHappens(color);
     }
 }
 

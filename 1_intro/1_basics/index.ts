@@ -9,6 +9,10 @@ export function hello(name) {
   return `Hello ${name}`;
 }
 
+export function returnNothing(){
+    console.log("Sometimes we don't return anything!")
+}
+
 export function square(baseValue) {
   return baseValue * baseValue
 }
@@ -19,5 +23,3 @@ export function TupleOfDifferentArrays(arrayOfStrings, arrayOfNumbers) {
     return x
 }
 
-// kommenter ut og sjekk at du får kompileringsfeil
-// hello(5)
