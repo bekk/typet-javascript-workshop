@@ -23,3 +23,11 @@ const withBoxAround = <P extends {}>(WrappedComponent: React.ComponentType<P>) =
       );
     }
   };
+
+// Hvis Foo er en komponent som brukes som <Foo bar={1} /> vil
+// const FooWithBoxAround = withBoxAround(Foo);
+// definere en ny komponent FooWithBoxAround
+// som brukes som <FooWithBoxAround label="SomeLabel" bar={1} />
+
+// Oppgave: Lag en komponent som du wrapper og sjekk at du får auto-complete
+// eller kompileringsfeil for label når du bruker den wrappede komponenten.
