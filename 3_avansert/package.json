@@ -9,7 +9,8 @@
     "2": "tsc -p 2_hoc_injector/tsconfig.json",
     "3": "tsc 3_result/index.ts",
     "3:fasit": "tsc 3_result_fasit/index.ts",
-    "4": "tsc 4_mapped_types/index.ts"
+    "4": "tsc 4_mapped_types/index.ts",
+    "5": "tsc 5_streng_tsconfig/index.ts"
   },
   "author": "",
   "license": "ISC",

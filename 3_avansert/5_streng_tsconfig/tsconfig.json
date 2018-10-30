@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true
+  },
+  "include": [
+    "./*.ts"
+  ]
+}
