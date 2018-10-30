@@ -1,7 +1,9 @@
 ## Typescript workshop
 
 #### IDE
-Vi anbefaler at du bruker en IDE som støtter TypeScript, som f.eks. IntelliJ IDEA (krever dessverre Ultimate) eller Visual Studio Code
+Vi anbefaler at du bruker en IDE som støtter TypeScript, som f.eks. IntelliJ IDEA (krever dessverre Ultimate) eller Visual Studio Code.
+- [Atom TypeScript plugin](https://atom.io/packages/atom-typescript)
+- [Sublime TypeScript plugin](https://packagecontrol.io/packages/TypeScript)
 
 #### Intro
 
