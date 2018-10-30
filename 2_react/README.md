@@ -77,7 +77,7 @@ For mer dokumentasjon se [typescript jsx dokumentasjon](https://www.typescriptla
 
 I denne oppgaven ser vi på Redux og hvordan vi kan utnytte Typescript
 
-Opprett Opprett store/actions.ts og paste inn:
+**Opprett Opprett store/actions.ts og paste inn:**
 
 ```
 export const REGISTER_NAME = 'REGISTER_NAME';
@@ -88,7 +88,7 @@ export const registerName = name => ({
 });
 ```
 
-Opprett store/reducer.ts og paste inn:
+**Opprett store/reducer.ts og paste inn:**
 
  ```
  import {REGISTER_NAME} from "../actions";
