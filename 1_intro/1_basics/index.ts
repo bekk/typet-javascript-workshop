@@ -1,25 +1,30 @@
-// Oppgave 1. Bruk any til å definere typen til input variablen og returverdien til funksjonen.
-export function anythingCanBeAny(anything) {
-    return anything
-}
-
-//Oppgave 2: Sett på typer for resten av koden:
+// 1. Sett på typer slik at det ikke er noen feil, men det som er kommentert ut
+// gir feil.
 
 export function hello(name) {
   return `Hello ${name}`;
 }
 
-export function returnNothing(){
+hello('Bob');
+// hello([1, 2, 3]); // Skal gi feil om du kommenterer inn.
+
+export function returnNothing() {
     console.log("Sometimes we don't return anything!")
 }
 
 export function square(baseValue) {
-  return baseValue * baseValue
+    return baseValue * baseValue
 }
 
-export function TupleOfDifferentArrays(arrayOfStrings, arrayOfNumbers) {
-    let x:
-    x = ;
-    return x
+square(3);
+// square('hello'); // Skal gi feil om du kommenterer inn.
+
+
+// 2. Hvorfor er dette lov? Sett typer på funksjonen så det er synlig hva som
+// skjer (trenger ikke være logisk kode).
+export function anythingCanBeAny(anything) {
+    return anything
 }
 
+const a: string = anythingCanBeAny(5);
+const b: number[] = anythingCanBeAny('heisann');

@@ -6,13 +6,13 @@ export function interfaceByShape(typeWithShape): void {
 interface LabelledValue{
 }
 
-export function printLabel(labelledObject: LabelledValue): void{
+export function printLabel(labelledObject: LabelledValue): void {
     console.log(labelledObject.label)
 }
 
-//Oppgave 2. Som vi lærte så fokuserer typescript på structural typing.
+// Oppgave 2. Som vi lærte så fokuserer typescript på structural typing.
 // Lag et interface som er et supersett av LabeledValue og pass det til printLabel.
-interface LabelledValueExpanded{
+interface LabelledValueExpanded {
 }
 
 const labeledValueWithMore: LabelledValueExpanded;

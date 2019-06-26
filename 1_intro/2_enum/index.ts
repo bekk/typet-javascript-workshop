@@ -1,13 +1,14 @@
 // Enums og never
-// Lag en Enum som settes som typen til colors. Den skal ha tre mulige verdier, de dere ser i oppgaven.
-// Se hva som skjer når man legger til en ny mulighet i enumen som ikke håndteres av funksjonen.
-// Forsøk å forklar hvorfor.
+// 1. Lag en Enum som heter Color. Den skal ha tre mulige verdier, de dere ser i
+// oppgaven. Rett opp eventuelle feil så ting kompilerer fint.
+// 2. Se hva som skjer når man legger til ett nytt alternativ i enumen som ikke
+// håndteres av funksjonen.
 
 export function colorsAreCool() {
-    console.log(switchOnEnums())
+    console.log(switchOnEnums());
 }
 
-export function switchOnEnums(color){
+export function switchOnEnums(color: Color){
     switch (color) {
         case Color.YELLOW: {
         }
@@ -23,4 +24,3 @@ export function switchOnEnums(color){
 export function neverHappens(neverEver: never): void{
 
 }
-

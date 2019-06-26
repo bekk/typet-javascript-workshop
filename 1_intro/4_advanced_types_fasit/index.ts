@@ -34,7 +34,7 @@ class Toyota implements Car {
 
 class Harley implements Motorcycle {
     driveOnTwoWheels() {
-        console.log("I have four wheels!")
+        console.log("I have two wheels!")
     }
     brake() {
         console.log("BRAKE!")
