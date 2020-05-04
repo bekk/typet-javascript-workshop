@@ -1,3 +1,7 @@
+
+// Nyttige linker:
+// https://www.typescriptlang.org/docs/handbook/interfaces.html
+
 // Oppgave 1. Assign en type til typeWithShape som gjør at vi vet hvilke verdier som er tilgjengelige.
 export function interfaceByShape(typeWithShape): void {
     console.log(typeWithShape.propertyOfType)

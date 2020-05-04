@@ -31,7 +31,7 @@ ikke kan gi deg så mye hjelp med å kjøre statisk analyse opp i mot javascript
 ### Oppgaver
 Oppgavene er delt inn i 3 deler. Start med 1_intro.
 
-#### [1_intro](https://github.com/bekk/typet-javascript-workshop/tree/master/1_intro)
+#### [1_Introduksjon](https://github.com/bekk/typet-javascript-workshop/tree/master/1_Introduksjon)
 
 #### [2_react](https://github.com/bekk/typet-javascript-workshop/tree/master/2_react)
 

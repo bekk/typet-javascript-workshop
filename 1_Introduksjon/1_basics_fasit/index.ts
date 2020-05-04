@@ -1,3 +1,8 @@
+
+// Nyttige linker:
+// https://www.typescriptlang.org/docs/handbook/basic-types.html
+// https://www.typescriptlang.org/docs/handbook/interfaces.html
+
 // 1. Sett på typer slik at det ikke er noen feil, men det som er kommentert ut
 // gir feil.
 
@@ -28,3 +33,17 @@ export function anythingCanBeAny(anything) {
 
 const a: string = anythingCanBeAny(5);
 const b: number[] = anythingCanBeAny('heisann');
+
+// 3. Få koden til å kompilere.
+interface Person {
+    firstName: string,
+    lastName: string
+}
+
+function greeting(person: Person): String {
+    return "Hello, " + person.firstName + " " + person.lastName;
+}
+
+let covid: Person = { firstName: "Covid", lastName: "19" };
+
+greeting(covid);
