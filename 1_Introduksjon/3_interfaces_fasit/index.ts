@@ -1,4 +1,20 @@
-// Oppgave 1. Assign en type til typeWithShape som gjør at vi vet hvilke verdier som er tilgjengelige.
+// Oppgave 1. Få koden til å kompilere.
+
+interface Person {
+    firstName: string,
+    lastName: string
+}
+
+function greeting(person: Person): String {
+    return "Hello, " + person.firstName + " " + person.lastName;
+}
+
+let covid: Person = { firstName: "Covid", lastName: "19" };
+
+greeting(covid);
+
+// Oppgave 2. Assign en type til typeWithShape som gjør at vi vet hvilke verdier som er tilgjengelige.
+
 export function interfaceByShape(typeWithShape: {propertyOfType: string}): void {
     console.log(typeWithShape.propertyOfType)
 }
@@ -11,24 +27,26 @@ export function printLabel(labelledObject: LabeledValue){
     console.log(labelledObject.label)
 }
 
-//Oppgave 2. Som vi lærte så fokuserer typescript på structural typing.
+//Oppgave 3. Som vi lærte så fokuserer typescript på structural typing.
 // Lag et interface som er et supersett av LabeledValue og pass det til printLabel.
+
 interface LabelledValueExpanded{
     label: string
     extraLabel: string
 }
 
 let temp: LabelledValueExpanded = {label: "test", extraLabel: "extra"};
+
 printLabel(temp);
 
-// Oppgave 2 -> Lag et interface som passer med koden under. Bruk optional typer
+// Oppgave 4. Lag et interface som passer med koden under. Bruk optional typer
+
 interface SquareConfig {
     color?: string,
     area?: number
     width?: number
 }
 
-// Oppgave 2 -> Lag et interface som passer med koden under
 function createSquare(config: SquareConfig): {color: string; area: number} {
     let newSquare = {color: "white", area: 100};
     if (config.color) {
@@ -41,14 +59,15 @@ function createSquare(config: SquareConfig): {color: string; area: number} {
 }
 
 let mySquare = createSquare({color: "black"});
+
 console.log(mySquare);
 
 const labeledValueWithMore = {label: 'MyLabel', extraLabel: 'ExtraLabel'};
 
 printLabel(labeledValueWithMore);
 
+// Oppgave 5. Funksjoner som typer. Assign mySearch til en funksjon som på en lovlig måte
 
-// Oppgave 4. Funksjoner som typer. Assign mySearch til en funksjon som på en lovlig måte
 interface SearchFunc {
     (source: string, target: string): boolean;
 }
@@ -56,5 +75,3 @@ interface SearchFunc {
 let mySearch: SearchFunc = (source: string, target: string): boolean => {
     return source === target
 };
-
-

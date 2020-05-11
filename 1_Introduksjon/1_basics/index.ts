@@ -1,13 +1,22 @@
-
 // Nyttige linker:
 // https://www.typescriptlang.org/docs/handbook/basic-types.html
 // https://www.typescriptlang.org/docs/handbook/interfaces.html
 
-// 1. Sett på typer slik at det ikke er noen feil, men det som er kommentert ut
-// gir feil.
+// Oppgave 1. Sett typer på variablene under
+// Som i JavaScript er alle tall i TypeScript float behind the hood.
+
+let age = 0.5;
+
+let isActive = true;
+
+let status = `Covid-19 er ${age} år og ${ isActive ? 'er fortsatt aktiv :(' : 'er ikke lenger aktiv :)' }`;
+
+console.log(status);
+
+// Oppgave 2. Sett på typer slik at det ikke er noen feil, men det som er kommentert ut gir feil.
 
 export function hello(name) {
-  return `Hello ${name}`;
+    return `Hello ${name}`;
 }
 
 hello('Bob');
@@ -25,24 +34,12 @@ square(3);
 // square('hello'); // Skal gi feil om du kommenterer inn.
 
 
-// 2. Hvorfor er det lov å kalle anythingCanBeAny(5) og anythingCanBeAny('heisann')?
+// Oppgave 3. Hvorfor er det lov å kalle anythingCanBeAny(5) og anythingCanBeAny('heisann')?
 // Sett typer på funksjonen så det er synlig hva som skjer (trenger ikke være logisk kode).
 export function anythingCanBeAny(anything) {
     return anything
 }
 
 const a: string = anythingCanBeAny(5);
+
 const b: number[] = anythingCanBeAny('heisann');
-
-
-// 3. Sett på typer og få koden til å kompilere
-interface Person {
-}
-
-function greeting(person: Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-
-let covid = { firstName: "Covid", lastName: "19" };
-
-greeting(covid);
