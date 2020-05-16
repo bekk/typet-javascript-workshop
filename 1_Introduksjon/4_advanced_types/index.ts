@@ -1,4 +1,8 @@
+
 // TYPEGUARDS
+// Nyttige linker:
+// https://www.typescriptlang.org/docs/handbook/advanced-types.html
+
 // Typeguards lar oss konkretisere typer som har muligheten til å være flere.
 // Noen ting vi vil trenge:
 // Type assertions: For å si at en type som kan være flere typer er en type kan man skrive:

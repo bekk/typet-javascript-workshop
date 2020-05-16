@@ -1,5 +1,5 @@
 {
-  "name": "minimal-ts",
+  "name": "Introduksjon",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,6 +17,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^3.5.2"
+    "typescript": "3.8.3"
   }
 }
