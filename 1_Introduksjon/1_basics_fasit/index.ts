@@ -36,10 +36,10 @@ square(3);
 // Oppgave 3. Hvorfor er dette lov? Sett typer på funksjonen så det er synlig hva som
 // skjer (trenger ikke være logisk kode).
 
-export function anythingCanBeAny(anything) {
+export function anythingCanBeAny(anything: any): any {
     return anything
 }
 
-const a: string = anythingCanBeAny(5);
+const a: number = anythingCanBeAny(5);
 
-const b: number[] = anythingCanBeAny('heisann');
+const b: string = anythingCanBeAny('heisann');

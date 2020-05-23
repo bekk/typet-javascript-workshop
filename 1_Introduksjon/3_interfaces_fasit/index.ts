@@ -28,7 +28,7 @@ export function printLabel(labelledObject: LabeledValue){
 }
 
 //Oppgave 3. Som vi lærte så fokuserer typescript på structural typing.
-// Lag et interface som er et supersett av LabeledValue og pass det til printLabel.
+// Lag et interface som er et supersett av LabelledValue og pass det til printLabel.
 
 interface LabelledValueExpanded{
     label: string

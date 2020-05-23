@@ -59,7 +59,7 @@ else if ((vehicle as Motorcycle).driveOnTwoWheels) {
     (vehicle as Motorcycle).driveOnTwoWheels();
 }
 
-// Fulfør koden under:
+// Fullfør koden under:
 function isCar(vehicle): vehicle is Car {
 }
 

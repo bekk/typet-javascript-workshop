@@ -39,6 +39,6 @@ export function anythingCanBeAny(anything) {
     return anything
 }
 
-const a: string = anythingCanBeAny(5);
+const a = anythingCanBeAny(5);
 
-const b: number[] = anythingCanBeAny('heisann');
+const b = anythingCanBeAny('heisann');

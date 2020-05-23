@@ -55,7 +55,7 @@ else if ((vehicle as Motorcycle).driveOnTwoWheels) {
     (vehicle as Motorcycle).driveOnTwoWheels();
 }
 
-// Fulfør koden under:
+// Fullfør koden under:
 function isCar(vehicle: Car | Motorcycle): vehicle is Car {
     return (vehicle as Car).driveOnFourWheels !== undefined
 }
