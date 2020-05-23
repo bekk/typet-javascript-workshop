@@ -1,6 +1,5 @@
 // Nyttige linker:
 // https://www.typescriptlang.org/docs/handbook/basic-types.html
-// https://www.typescriptlang.org/docs/handbook/interfaces.html
 
 // Oppgave 1. Sett typer på variablene under
 // Som i JavaScript er alle tall i TypeScript float behind the hood.
