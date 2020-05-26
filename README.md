@@ -13,4 +13,4 @@ Oppgavene er delt inn i 2 deler. Start med 1_Introduksjon.
 #### [2_react](https://github.com/bekk/typet-javascript-workshop/tree/master/2_react)
 
 
-Presentasjonen kan dere finne [her](https://slides.com/evestera/typescript)
+Presentasjonen kan dere finne [her](https://slides.com/fheggenes/introts)
