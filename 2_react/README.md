@@ -7,6 +7,6 @@ For å komme i gang kan du kjøre `npm install` etterfulgt av `npm start`.
 
 
 ## Oppgaver
-Denne delen har kun én konkret oppgave: **konverter appen til TypeScript!** Det er opp til deg selv hvor langt du er villig til å gå og hvor strengt du gidder å være. 
+Denne delen har kun én konkret oppgave: **konverter appen til TypeScript!** Det er opp til deg selv hvor langt du er villig til å gå og hvor streng du gidder å være. 
 
 Start f.eks. med å endre `App.jsx` til `App.tsx` – om du bruker Visual Studio Code, IntelliJ IDEA eller CodeSandbox, så får du som regel god hjelp med å finne ut av hva som skal til for å gjøre TypeScript happy.
